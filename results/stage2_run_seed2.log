@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+  ▶ [بذاكرة] بذرة 2 | 1000 خطوة | seq=256 | WikiText-2
+    خطوة     0 | خسارة=5.5496 | تدرّج=0.4210 | lr=3.75e-06
+    خطوة   200 | خسارة=3.3001 | تدرّج=0.2225 | lr=2.87e-04
+    خطوة   400 | خسارة=2.7987 | تدرّج=0.2901 | lr=2.19e-04
+    خطوة   600 | خسارة=2.7434 | تدرّج=0.2210 | lr=1.19e-04
+    خطوة   800 | خسارة=2.7115 | تدرّج=0.2232 | lr=3.33e-05
+    خطوة   999 | خسارة=2.6778 | تدرّج=0.2607 | lr=0.00e+00
+    ✓ PPL=16.1712 | late_PPL=15.6893 | probe=-0.00% | رامة=521م.ب
+Traceback (most recent call last):
+  File "/home/abodojana301zx/Documents/Wameed/scripts/train_memory.py", line 472, in <module>
+    main()
+  File "/home/abodojana301zx/Documents/Wameed/scripts/train_memory.py", line 461, in main
+    summary = statistical_summary(rows)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abodojana301zx/Documents/Wameed/scripts/train_memory.py", line 359, in statistical_summary
+    ppl_m_no, ppl_s_no   = mean_std(no_mem_ppl)
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abodojana301zx/Documents/Wameed/scripts/train_memory.py", line 349, in mean_std
+    m = sum(vals) / len(vals)
+        ~~~~~~~~~~^~~~~~~~~~~
+ZeroDivisionError: division by zero

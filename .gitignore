@@ -1,0 +1,5 @@
+wameed-env/
+__pycache__/
+*.pyc
+.claude/
+results/stage2_run.log

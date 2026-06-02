@@ -1,0 +1,88 @@
+{
+  "rows": [
+    {
+      "experiment": "no_memory",
+      "seed": 0,
+      "perplexity": 11.59329000792504,
+      "late_ppl": 12.035290722793933,
+      "probe_improvement": 2.564311062317401e-07,
+      "params": 70339,
+      "seconds": 101.30562105700028,
+      "peak_ram_mb": 379.15234375,
+      "data_source": "fallback_local إجباري"
+    },
+    {
+      "experiment": "no_memory",
+      "seed": 1,
+      "perplexity": 14.141318126992871,
+      "late_ppl": 14.699059022934378,
+      "probe_improvement": 4.482725247377432e-07,
+      "params": 70339,
+      "seconds": 85.9252628940003,
+      "peak_ram_mb": 377.515625,
+      "data_source": "fallback_local إجباري"
+    },
+    {
+      "experiment": "no_memory",
+      "seed": 2,
+      "perplexity": 11.834214312353863,
+      "late_ppl": 11.366980439519129,
+      "probe_improvement": 0.0,
+      "params": 70339,
+      "seconds": 78.43682618599996,
+      "peak_ram_mb": 376.82421875,
+      "data_source": "fallback_local إجباري"
+    },
+    {
+      "experiment": "memory",
+      "seed": 0,
+      "perplexity": 13.490002845440973,
+      "late_ppl": 13.019214762272302,
+      "probe_improvement": -6.487770120226426e-06,
+      "params": 122115,
+      "seconds": 333.29187986800025,
+      "peak_ram_mb": 383.6484375,
+      "data_source": "fallback_local إجباري"
+    },
+    {
+      "experiment": "memory",
+      "seed": 1,
+      "perplexity": 12.69325072963372,
+      "late_ppl": 12.573542452890862,
+      "probe_improvement": -7.855390677866089e-06,
+      "params": 122115,
+      "seconds": 152.84837944299943,
+      "peak_ram_mb": 316.30078125,
+      "data_source": "fallback_local إجباري"
+    },
+    {
+      "experiment": "memory",
+      "seed": 2,
+      "perplexity": 15.025629490007015,
+      "late_ppl": 15.478670010643803,
+      "probe_improvement": -1.4878683171093072e-05,
+      "params": 122115,
+      "seconds": 149.20913557699896,
+      "peak_ram_mb": 316.51171875,
+      "data_source": "fallback_local إجباري"
+    }
+  ],
+  "summary": {
+    "ppl_no_memory": 12.5229,
+    "ppl_no_std": 1.1486,
+    "ppl_memory": 13.7363,
+    "ppl_memory_std": 0.968,
+    "ppl_improvement_pct": -9.689,
+    "ppl_p_value": 0.317,
+    "late_ppl_no_memory": 12.7004,
+    "late_ppl_no_std": 1.4393,
+    "late_ppl_memory": 13.6905,
+    "late_ppl_memory_std": 1.2775,
+    "late_ppl_improvement_pct": -7.795,
+    "late_ppl_p_value": 0.5072,
+    "probe_no_memory": 0.0,
+    "probe_memory": -0.0,
+    "probe_delta": -0.0,
+    "probe_p_value": 0.0186
+  }
+}

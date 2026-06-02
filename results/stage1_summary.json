@@ -1,0 +1,112 @@
+{
+  "rows": [
+    {
+      "experiment": "base",
+      "seed": 0,
+      "perplexity": 10.287036928884715,
+      "valid_loss": 2.330884552001953,
+      "params": 70209,
+      "seconds": 405.0055472590001,
+      "peak_ram_mb": 432.50390625,
+      "data_source": "WikiText-2",
+      "last_importance_mean": null,
+      "importance_stats": null
+    },
+    {
+      "experiment": "base",
+      "seed": 1,
+      "perplexity": 10.281842486413327,
+      "valid_loss": 2.3303794741630552,
+      "params": 70209,
+      "seconds": 307.2361073740001,
+      "peak_ram_mb": 452.73046875,
+      "data_source": "WikiText-2",
+      "last_importance_mean": null,
+      "importance_stats": null
+    },
+    {
+      "experiment": "base",
+      "seed": 2,
+      "perplexity": 10.258248691528635,
+      "valid_loss": 2.3280821323394774,
+      "params": 70209,
+      "seconds": 249.17162839499997,
+      "peak_ram_mb": 452.78125,
+      "data_source": "WikiText-2",
+      "last_importance_mean": null,
+      "importance_stats": null
+    },
+    {
+      "experiment": "importance",
+      "seed": 0,
+      "perplexity": 10.166365903146865,
+      "valid_loss": 2.319084811210632,
+      "params": 70339,
+      "seconds": 408.15594408100014,
+      "peak_ram_mb": 290.2421875,
+      "data_source": "WikiText-2",
+      "last_importance_mean": 0.7430362701416016,
+      "importance_stats": {
+        "mean": 0.7252737283706665,
+        "min": 6.0787358961533755e-05,
+        "max": 0.9986617565155029,
+        "std": 0.28471750020980835
+      }
+    },
+    {
+      "experiment": "importance",
+      "seed": 1,
+      "perplexity": 9.92963033329695,
+      "valid_loss": 2.2955232501029967,
+      "params": 70339,
+      "seconds": 405.65655383600006,
+      "peak_ram_mb": 245.89453125,
+      "data_source": "WikiText-2",
+      "last_importance_mean": 0.769798219203949,
+      "importance_stats": {
+        "mean": 0.7536991834640503,
+        "min": 0.00015443374286405742,
+        "max": 0.9977506995201111,
+        "std": 0.2536734342575073
+      }
+    },
+    {
+      "experiment": "importance",
+      "seed": 2,
+      "perplexity": 9.803332255333839,
+      "valid_loss": 2.2827223539352417,
+      "params": 70339,
+      "seconds": 435.493935941,
+      "peak_ram_mb": 227.234375,
+      "data_source": "WikiText-2",
+      "last_importance_mean": 0.7469297051429749,
+      "importance_stats": {
+        "mean": 0.7444704174995422,
+        "min": 0.00028563174419105053,
+        "max": 0.9952044486999512,
+        "std": 0.24149997532367706
+      }
+    }
+  ],
+  "summary": {
+    "base": {
+      "values": [
+        10.287036928884715,
+        10.281842486413327,
+        10.258248691528635
+      ],
+      "mean": 10.275709368942225,
+      "std": 0.012527356729793248
+    },
+    "importance": {
+      "values": [
+        10.166365903146865,
+        9.92963033329695,
+        9.803332255333839
+      ],
+      "mean": 9.96644283059255,
+      "std": 0.15047641527043815
+    },
+    "improvement_pct": 3.00968553357899
+  }
+}

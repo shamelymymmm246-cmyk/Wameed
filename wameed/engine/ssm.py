@@ -36,6 +36,7 @@ class TinySSM(nn.Module):
         mem_k: int = 16,
         mem_K: int = 256,
         mem_threshold3: float = 0.6,
+        mem_compress_ratio: int = 1,
     ) -> None:
         super().__init__()
         if num_layers < 1:
@@ -65,13 +66,14 @@ class TinySSM(nn.Module):
         self.output = nn.Linear(state_dim, vocab_size)
 
         # وحدة الذاكرة الهرمية — تُربط تلقائياً بالنموذج كـ nn.Module فرعي.
-        # نمرّر k و K و threshold3 لتمكين ضبطها من التجارب (الخطة البديلة ب).
+        # نمرّر k و K و threshold3 و mem_compress_ratio لتمكين ضبطها من التجارب.
         if use_memory:
             self.memory = HierarchicalMemory(
                 state_dim=state_dim,
                 k=mem_k,
                 K=mem_K,
                 threshold3=mem_threshold3,
+                compress_ratio=mem_compress_ratio,
             )
 
         self.reset_parameters()

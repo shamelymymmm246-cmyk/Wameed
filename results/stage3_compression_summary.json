@@ -1,0 +1,154 @@
+{
+  "config": {
+    "steps": 250,
+    "eval_batches": 8,
+    "batch_size": 8,
+    "seq_len": 128,
+    "data": "fallback_local إجباري",
+    "device": "CPU i7-4510U",
+    "note": "r=8 seed=2 مفقود (إجهاض المستخدم بعد 11/12 تجربة)"
+  },
+  "rows": [
+    {
+      "experiment": "r1",
+      "seed": 0,
+      "compress_ratio": 1,
+      "perplexity": 26.2981,
+      "params": 122115,
+      "seconds": 93,
+      "peak_ram_mb": 332
+    },
+    {
+      "experiment": "r1",
+      "seed": 1,
+      "compress_ratio": 1,
+      "perplexity": 26.024,
+      "params": 122115,
+      "seconds": 98,
+      "peak_ram_mb": 332
+    },
+    {
+      "experiment": "r1",
+      "seed": 2,
+      "compress_ratio": 1,
+      "perplexity": 30.7728,
+      "params": 122115,
+      "seconds": 77,
+      "peak_ram_mb": 333
+    },
+    {
+      "experiment": "r2",
+      "seed": 0,
+      "compress_ratio": 2,
+      "perplexity": 23.8291,
+      "params": 124259,
+      "seconds": 78,
+      "peak_ram_mb": 335
+    },
+    {
+      "experiment": "r2",
+      "seed": 1,
+      "compress_ratio": 2,
+      "perplexity": 23.889,
+      "params": 124259,
+      "seconds": 112,
+      "peak_ram_mb": 335
+    },
+    {
+      "experiment": "r2",
+      "seed": 2,
+      "compress_ratio": 2,
+      "perplexity": 26.7536,
+      "params": 124259,
+      "seconds": 108,
+      "peak_ram_mb": 334
+    },
+    {
+      "experiment": "r4",
+      "seed": 0,
+      "compress_ratio": 4,
+      "perplexity": 29.0113,
+      "params": 120115,
+      "seconds": 127,
+      "peak_ram_mb": 335
+    },
+    {
+      "experiment": "r4",
+      "seed": 1,
+      "compress_ratio": 4,
+      "perplexity": 27.936,
+      "params": 120115,
+      "seconds": 115,
+      "peak_ram_mb": 334
+    },
+    {
+      "experiment": "r4",
+      "seed": 2,
+      "compress_ratio": 4,
+      "perplexity": 28.9014,
+      "params": 120115,
+      "seconds": 94,
+      "peak_ram_mb": 334
+    },
+    {
+      "experiment": "r8",
+      "seed": 0,
+      "compress_ratio": 8,
+      "perplexity": 30.2464,
+      "params": 118043,
+      "seconds": 71,
+      "peak_ram_mb": 334
+    },
+    {
+      "experiment": "r8",
+      "seed": 1,
+      "compress_ratio": 8,
+      "perplexity": 24.846,
+      "params": 118043,
+      "seconds": 89,
+      "peak_ram_mb": 335
+    }
+  ],
+  "sweep_table": [
+    {
+      "compress_ratio": 1,
+      "n_seeds": 3,
+      "params": 122115,
+      "ppl_mean": 27.6983,
+      "ppl_std": 2.1769,
+      "ram_mean_mb": 332.3,
+      "ppl_increase_pct": 0.0,
+      "ram_saving_pct": 0.0
+    },
+    {
+      "compress_ratio": 2,
+      "n_seeds": 3,
+      "params": 124259,
+      "ppl_mean": 24.8239,
+      "ppl_std": 1.3647,
+      "ram_mean_mb": 334.7,
+      "ppl_increase_pct": -10.378,
+      "ram_saving_pct": -0.702
+    },
+    {
+      "compress_ratio": 4,
+      "n_seeds": 3,
+      "params": 120115,
+      "ppl_mean": 28.6162,
+      "ppl_std": 0.4831,
+      "ram_mean_mb": 334.3,
+      "ppl_increase_pct": 3.314,
+      "ram_saving_pct": -0.602
+    },
+    {
+      "compress_ratio": 8,
+      "n_seeds": 2,
+      "params": 118043,
+      "ppl_mean": 27.5462,
+      "ppl_std": 2.7002,
+      "ram_mean_mb": 334.5,
+      "ppl_increase_pct": -0.549,
+      "ram_saving_pct": -0.652
+    }
+  ]
+}
